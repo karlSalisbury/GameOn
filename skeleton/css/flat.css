@@ -1,0 +1,997 @@
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+
+
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+
+/* #Basic Styles
+================================================== */
+	body{
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+		background-color: #ededed;
+        background-image: url('../../images/titanfallbackground.png');
+        background-attachment: fixed;
+ }
+.scale-with-grid{
+    border-radius: 3px;
+}
+.contentcontainer{
+	background-color: #FFF;
+	box-shadow: none;
+	/*border-left: solid 1px #d8d8d8;
+	border-right: solid 1px #d8d8d8;*/
+}
+.navcontainer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+	position: relative;
+	background-color: #FFF;
+	/*background-image:  url('../../images/headerstripbackground.png');*/
+	background-repeat: repeat-x;
+	box-shadow: 0px 0px 200px rgba(0,0,0,0.2);
+}
+
+
+
+/* #Typography
+================================================== */
+p, ul li{
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+article p{
+	line-height: 1.5em;
+	color: #333333;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+/*Styles review typography*/
+.reviews h1{
+	margin-top: 0.5em;
+	font-size: 2em;
+}
+.reviews p{
+	margin: 1em 0em 1em 0;
+}
+aside ul li, aside ul li h2{
+	font-family: 'Raleway', OCRA, courier;
+}
+
+/* #Links
+================================================== */
+
+.reviews a:link, .reviews a:visited, .reviews a:hover, .reviews a:active{
+	text-decoration: none;
+	border-bottom: none;
+}
+a:link {color:#ff781c;}      /* unvisited link */
+a:visited {color:#ff781c;}   /* visited link */
+a:hover {color:#000;}     /* mouse over link */
+a:active {color:#ff781c;}    /* selected link */
+
+/* #Lists
+================================================== */
+
+
+
+/* #Images
+================================================== */
+
+	img.scale-with-grid {
+		max-width: 100%;
+		height: auto; }
+
+
+
+
+
+/* #Misc
+================================================== */
+	.remove-bottom { margin-bottom: 0 !important; }
+	.half-bottom { margin-bottom: 10px !important; }
+	.add-bottom { margin-bottom: 20px !important; }
+	
+	
+	
+/* #Forms
+================================================== */
+
+	form {
+		margin-bottom: 20px; }
+	fieldset {
+		margin-bottom: 20px; }
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		border: 1px solid #ccc;
+		padding: 6px 4px;
+		outline: none;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #777;
+		margin: 0;
+		width: 210px;
+		max-width: 100%;
+		display: block;
+		margin-bottom: 20px;
+		background: #fff; }
+	select {
+		padding: 0; }
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	textarea:focus {
+		border: 1px solid #aaa;
+ 		color: #444;
+ 		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		box-shadow:  0 0 3px rgba(0,0,0,.2); }
+	textarea {
+		min-height: 60px; }
+	label,
+	legend {
+		display: block;
+		font-weight: bold;
+		font-size: 13px;  }
+	select {
+		width: 220px; }
+	input[type="checkbox"] {
+		display: inline; }
+	label span,
+	legend span {
+		font-weight: normal;
+		font-size: 13px;
+		color: #444; }
+	
+
+
+
+	
+	
+	
+	
+	
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* #Site Styles
+================================================== */
+.container h1{
+	font-size: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.container h2{
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;	
+}
+.container p{
+	margin-top: 15px;
+	margin-bottom: 15px;	
+}
+.container em{
+	font-weight: 500;
+}
+
+/* #Navigation/Header Styles
+================================================== */
+
+.siteid{
+	position: absolute;
+	left: -13px;
+}
+.navcontainer{
+	position: relative;
+	box-shadow: none;	
+}
+.navcontainer nav{
+	position: absolute;
+	right: 25px;
+	top: 25px;
+}
+.navcontainer nav ul li{
+	display: inline;
+	margin-left: 15px;
+}
+.navcontainer nav ul li a:link, .navcontainer nav ul li a:visited{
+	color: #000;
+	text-decoration: none;
+	font-size: 1.25em;
+}
+.navcontainer nav ul li a:hover{
+	color: #ff781c;
+}
+.imageheader{
+	margin-top: 71px;
+}
+.searchbar{
+	position: absolute;
+	margin-left: 265px;
+	margin-top: 15px;
+	height: 30px;
+	}
+.searchbar input[type="text"]{
+	color: #000;
+	border-radius: 5px;
+	padding-left: 10px;
+	background-color: #f1f1f1;
+	border: none;
+	width: 250px;
+	height: 30px;
+	font-size: 15px;
+	font-family: 'Raleway', OCRA, courier;		
+	
+}
+
+
+
+
+
+
+/* #Page Styles
+================================================== */
+.form{
+	border-radius: 30px;
+	background-color: #ff781c;
+	padding: 30px;
+}
+.form input[type="text"], .form input[type="password"]{
+	float: left;
+	width: 78%;
+	margin-bottom: 0px;
+	font-family: 'Press Start 2P', OCRA, courier;
+	border-color: #393937;
+	padding: 15px;
+background: #4c4c4c; /* Old browsers */
+
+}
+.form input[type="text"]{
+	border-radius: 5px 5px 0px 0px;
+}
+.form input[type="password"]{
+	border-radius: 0px 0px 5px 5px;
+}
+.form input[type="password"], .form input[type="text"]{
+}
+.form input[type="text"]:focus, .form input[type="password"]:focus{
+	color: #FFF;
+}
+.form input[type="submit"]{
+	text-transform: uppercase;
+	font-family: 'Press Start 2P', OCRA, courier;
+	margin-left: 30px;
+	border: solid 2px #FFF;
+	padding: 34px;
+	border-radius: 15px;
+	color: #FFF;
+	background: #4c4c4c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4c4c4c 0%, #000000 80%, #131313 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c4c4c), color-stop(80%,#000000), color-stop(100%,#131313)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4c4c4c 0%,#000000 80%,#131313 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4c4c4c 0%,#000000 80%,#131313 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4c4c4c 0%,#000000 80%,#131313 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4c4c4c 0%,#000000 80%,#131313 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+}
+.formheading{
+	margin-top: 20px;
+	margin-bottom: 50px;
+	margin-left: 250px;
+}
+.formheading h1{
+	text-shadow: 4px 4px rgba(0,0,0, 0.5);	
+	color: #FFF;
+	font-size: 30px;
+	font-family: 'Press Start 2P', OCRA, courier;
+}
+.formbottom{
+	margin-top: 15px;
+}
+.formbottom a:link, .formbottom a:visited{
+	color: #FFF;
+}
+.form form{
+	margin: auto;
+}
+
+.error{
+	background-image: url('../../images/erroricon.png');
+	background-repeat: no-repeat;
+	font-size: 20px;
+	color: #FFF;
+	font-weight: 700;
+	background-position: left center;
+	padding: 30px 30px 30px 60px;
+	margin-bottom: 15px;
+	border-radius: 8px;
+	background-color: #821119;
+	border: 2px solid #FFF;
+}
+.success{
+	background-image: url('../../images/erroricon.png');
+	background-repeat: no-repeat;
+	font-size: 20px;
+	color: #FFF;
+	font-weight: 700;
+	background-position: left center;
+	padding: 30px 30px 30px 60px;
+	margin-bottom: 15px;
+	border-radius: 8px;
+	background-color: #a3c295;
+	/*background-color: #869f7a;*/
+	border: 2px solid #FFF;
+}
+.closebutton{
+	position: absolute;
+	right: 12px;
+	top: 12px;
+}
+
+
+.member{
+	border-top: solid 1px #e6e6e5;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 10px;
+	margin-right: 0px!important;
+	/*margin-left: 5px!important;*/
+}
+.member img{
+	display: block;
+	margin: auto;
+}
+.member h2, .member p{
+	margin-left: 25px;
+}
+.member h2{
+	font-size: 20px;
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+.communitycontainer h1{
+	font-size: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+.currentmembers{
+	margin-left: 15px;
+	margin-top: 5px;
+	margin-bottom:20px;
+}
+#pagination a:link, a:visited, .activePagination{
+	padding: 10px;
+	display: inline-block;
+	font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
+	text-decoration:none;
+	border-radius: 5px;
+	color: #000;
+}
+#pagination{
+	border-top: solid 1px #e6e6e5;	
+	text-align: center;
+	padding: 15px 0px 15px 0px;
+}
+#pagination a:link{
+	background-color: #d4d4d4;
+	color: #000;
+}
+#pagination a:hover{
+	background-color: #3f3f3f;
+	color: #FFF;
+}
+.activePagination{
+	background-color: #ff781c ;
+}
+
+
+
+
+
+/* #BLOODY SIDEBAR
+================================================== */
+
+.totalposts{
+	font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
+	font-weight: 800;
+	font-size: 15px;
+	border-radius: 50%;
+	text-align: center;
+	width: 15px;
+	height: 12px;
+	padding-left: 2px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 8px;
+	line-height: 1em;
+	float: right;
+	margin-left: 15px;
+	
+	background: #ff781c!important;
+}
+aside{
+	margin-top: 0px;
+}
+	
+aside ul li{
+	/*text-shadow: 2px 2px rgba(0,0,0, 0.5);*/
+	position: relative;
+}
+
+aside ul li h2{
+	margin-top: 0px!important;
+	margin-bottom: 0px!important;
+	display: block;
+	color: #FFF;
+	padding-left: 15px;
+	line-height: 2.3em;
+	background: #ff781c;
+	text-transform: uppercase;
+}
+
+aside ul li a{
+	padding: 15px;
+	height: 22px;
+	line-height: 1.5em;
+	color: #FFF!important;
+	text-decoration:none;
+	display: block;
+background: #393939;
+}
+aside ul li a:hover{
+	background: #323232; /* Old browsers */
+}
+
+aside{
+	position: relative;
+}
+aside nav{
+    width: 80%;
+	position: absolute;
+	left: 0px;
+}
+aside ul:last-child{
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+
+
+
+/* Footer
+================================================== */
+
+footer{
+	color: white;
+	padding: 2em;
+	background: #393939; /* Old browsers */
+    margin-top: 35px;
+}
+
+
+/* #Account information bar
+================================================== */
+
+
+/*Style the text to look like letterpress*/
+
+.useravatar p{
+	text-shadow: -1px -1px 0px rgba(0, 0, 0, 1);
+}
+
+
+.accountinfobar{
+	color: white;
+	background: #393939; /* Old browsers */
+}
+.useravatar{
+	float: left;
+}
+.useravatar img{
+	margin: 5px;
+	vertical-align:middle;
+	border-radius: 1px;
+}
+.accountbuttons{
+	margin-top:10px;
+	margin-right: 5px;
+	float: right;
+}
+.accountbuttons a:link, .accountbuttons a:visited{
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+	vertical-align:middle;
+	border: solid 1px #5e5e5e;
+	border-radius: 5px;
+
+	/*inset shadow*/
+	-webkit-box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.75);
+	box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.75);
+	
+	/*reguar shadow*/	
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
+	-moz-box-shadow:    0px 0px 2px 0px rgba(0, 0, 0, 1);
+	box-shadow:         0px 0px 2px 0px rgba(0, 0, 0, 1);
+	
+	background: #424240; /* Old browsers */
+}
+.accountbuttons a:hover{
+	background-color: #ff781c;
+	background: #db6d00; /* Old browsers */
+	background: -moz-linear-gradient(top,  #db6d00 1%, #ff781c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#db6d00), color-stop(100%,#ff781c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #db6d00 1%,#ff781c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #db6d00 1%,#ff781c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #db6d00 1%,#ff781c 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #db6d00 1%,#ff781c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db6d00', endColorstr='#ff781c',GradientType=0 ); /* IE6-9 */
+}
+
+
+.accountbuttons ul li{
+	display: inline;
+}
+
+
+
+
+/* #Review Styles
+================================================== */
+
+article{
+	margin-top: 35px;
+	margin-right: 25px;
+	margin-left: 25px;
+	margin-bottom: 35px;
+	padding-bottom: 25px;
+	border-bottom-color: #E6E6E5;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+}
+.star{
+	margin-right: 5px;
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+	aside nav{
+	position: relative;
+	left: 0px;
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+	
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+	
+	}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+
+
+/* #Base 960 Grid
+================================================== */
+
+.black{
+	display: none;
+}
+.mobilenav, .mobilenavbutton{
+	display: none;
+}
+
+
+    .container                                  { position: relative; width: 960px/*width: 960px;*/; margin: 0 auto; padding: 0; }
+    .container .column,
+    .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+    .row                                        {  }
+
+    /* Nested Column Classes */
+    .column.alpha, .columns.alpha               { margin-left: 0; }
+    .column.omega, .columns.omega               { margin-right: 0; }
+
+    /* Base Grid */
+    .container .one.column,
+    .container .one.columns                     { width: 40px;  }
+    .container .two.columns                     { width: 100px; }
+    .container .three.columns                   { width: 160px; }
+    .container .four.columns                    { width: 220px; }
+    .container .five.columns                    { width: 280px; }
+    .container .six.columns                     { width: 340px; }
+    .container .seven.columns                   { width: 400px; }
+    .container .eight.columns                   { width: 460px; }
+    .container .nine.columns                    { width: 520px; }
+    .container .ten.columns                     { width: 580px; }
+    .container .eleven.columns                  { width: 640px; }
+    .container .twelve.columns                  { width: 700px; }
+    .container .thirteen.columns                { width: 760px; }
+    .container .fourteen.columns                { width: 820px; }
+    .container .fifteen.columns                 { width: 880px; }
+    .container .sixteen.columns                 { width: 940px; }
+
+    .container .one-third.column                { width: 300px; margin-left: 0px; float: left;}
+    .container .two-thirds.column               { width: 620px; float: right;}
+
+    /* Offsets */
+    .container .offset-by-one                   { padding-left: 60px;  }
+    .container .offset-by-two                   { padding-left: 120px; }
+    .container .offset-by-three                 { padding-left: 180px; }
+    .container .offset-by-four                  { padding-left: 240px; }
+    .container .offset-by-five                  { padding-left: 300px; }
+    .container .offset-by-six                   { padding-left: 360px; }
+    .container .offset-by-seven                 { padding-left: 420px; }
+    .container .offset-by-eight                 { padding-left: 480px; }
+    .container .offset-by-nine                  { padding-left: 540px; }
+    .container .offset-by-ten                   { padding-left: 600px; }
+    .container .offset-by-eleven                { padding-left: 660px; }
+    .container .offset-by-twelve                { padding-left: 720px; }
+    .container .offset-by-thirteen              { padding-left: 780px; }
+    .container .offset-by-fourteen              { padding-left: 840px; }
+    .container .offset-by-fifteen               { padding-left: 900px; }
+
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .container                                  { width: 768px; }
+        .container .column,
+        .container .columns                         { margin-left: 10px; margin-right: 10px;  }
+        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
+        .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
+        .alpha.omega                                { margin-left: 0; margin-right: 0; }
+
+        .container .one.column,
+        .container .one.columns                     { width: 28px; }
+        .container .two.columns                     { width: 76px; }
+        .container .three.columns                   { width: 124px; }
+        .container .four.columns                    { width: 172px; }
+        .container .five.columns                    { width: 220px; }
+        .container .six.columns                     { width: 268px; }
+        .container .seven.columns                   { width: 316px; }
+        .container .eight.columns                   { width: 364px; }
+        .container .nine.columns                    { width: 412px; }
+        .container .ten.columns                     { width: 460px; }
+        .container .eleven.columns                  { width: 508px; }
+        .container .twelve.columns                  { width: 556px; }
+        .container .thirteen.columns                { width: 604px; }
+        .container .fourteen.columns                { width: 652px; }
+        .container .fifteen.columns                 { width: 700px; }
+        .container .sixteen.columns                 { width: 748px; }
+
+        .container .one-third.column                { width: 236px; }
+        .container .two-thirds.column               { width: 492px; }
+
+        /* Offsets */
+        .container .offset-by-one                   { padding-left: 48px; }
+        .container .offset-by-two                   { padding-left: 96px; }
+        .container .offset-by-three                 { padding-left: 144px; }
+        .container .offset-by-four                  { padding-left: 192px; }
+        .container .offset-by-five                  { padding-left: 240px; }
+        .container .offset-by-six                   { padding-left: 288px; }
+        .container .offset-by-seven                 { padding-left: 336px; }
+        .container .offset-by-eight                 { padding-left: 384px; }
+        .container .offset-by-nine                  { padding-left: 432px; }
+        .container .offset-by-ten                   { padding-left: 480px; }
+        .container .offset-by-eleven                { padding-left: 528px; }
+        .container .offset-by-twelve                { padding-left: 576px; }
+        .container .offset-by-thirteen              { padding-left: 624px; }
+        .container .offset-by-fourteen              { padding-left: 672px; }
+        .container .offset-by-fifteen               { padding-left: 720px; }
+    }
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+        .container {
+		width: 100%;		
+		}
+
+
+
+
+/* HIDES THE DESKTOP NAV */
+.mainnav{
+	display: none!important;
+}
+.navcontainer{
+	position: relative;
+}
+
+.mobilenavbutton{
+	display: block;
+	position: absolute;
+	right: 0px;
+	padding: 11px;
+	z-index: 2;
+	top: 0px;
+	background: #424240; /* Old browsers */
+	background: -moz-linear-gradient(top,  #424240 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#424240), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #424240 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #424240 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #424240 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #424240 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424240', endColorstr='#000000',GradientType=0 ); /* IE6-9 */	
+}
+.mobilenav{
+	display: none;
+	position: absolute;
+	top: 112px;
+	z-index: 2;
+	width: 100%;
+}
+.mobilenav ul li a:link, .mobilenav ul li a:visited{
+	color: #FFF;
+	font-family: 'Press Start 2P', OCRA, courier;
+	padding: 20px 20px 20px 20px;
+	display: block;
+	text-decoration: none;	
+	background: #424240; /* Old browsers */
+}
+.mobilenav ul li a:hover{
+	
+}
+.black{
+	display: none;
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+}
+aside ul:last-child{
+	background-image: none!important;
+}
+
+
+
+		.container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column  { /*width: 300px;*/ width: 100%; }
+		
+		
+        /* Offsets */
+        .container .offset-by-one,
+        .container .offset-by-two,
+        .container .offset-by-three,
+        .container .offset-by-four,
+        .container .offset-by-five,
+        .container .offset-by-six,
+        .container .offset-by-seven,
+        .container .offset-by-eight,
+        .container .offset-by-nine,
+        .container .offset-by-ten,
+        .container .offset-by-eleven,
+        .container .offset-by-twelve,
+        .container .offset-by-thirteen,
+        .container .offset-by-fourteen,
+        .container .offset-by-fifteen { padding-left: 0; }
+
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container { width: 420px; }
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column { width: 420px; }
+    }
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+
+
+
+
+	
